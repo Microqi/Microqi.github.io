@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #000;
+    overflow: hidden;
+    font-family: 'Courier New', monospace;
+}
+
+canvas {
+    display: block;
+    background: #000;
+}
+
+.input-container {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+}
+
+#textInput {
+    background: rgba(0, 0, 0, 0.7);
+    border: 2px solid #0F0;
+    color: #0F0;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-family: 'Courier New', monospace;
+    width: 350px;
+    border-radius: 8px;
+    outline: none;
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+#textInput:focus {
+    box-shadow: 0 0 25px rgba(0, 255, 0, 0.6);
+    border-color: #5F5;
+}
+
+#textInput::placeholder {
+    color: rgba(0, 255, 0, 0.5);
+}
+
