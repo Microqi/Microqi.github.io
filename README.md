@@ -1,21 +1,46 @@
-完成了！`script.js` 已拆分为 4 个模块化文件：
+# Intelligent Systems Research Group (ISRG) Website
 
-**新的文件结构：**
+This is a static website template for a research group, designed to be hosted on GitHub Pages. It uses "Vanilla" web technologies (HTML, CSS, JavaScript) without any complex build tools or frameworks.
+
+## Project Structure
+
 ```
-simpleweb/
-├── index.html
-├── style.css
-└── js/
-    ├── config.js    # 配置常量
-    ├── drops.js     # 雨滴管理类
-    ├── renderer.js  # 画布渲染器类
-    └── main.js      # 主入口文件
+.
+├── index.html      # Home page
+├── members.html    # Team members page
+├── research.html   # Research and publications page
+├── news.html       # Full news archive
+├── css/
+│   └── style.css   # Main stylesheet
+├── js/
+│   └── main.js     # Basic interactivity (mobile menu)
+└── assets/
+    └── images/     # Place your images here
 ```
 
-**各模块职责：**
-- **`config.js`** - 所有配置参数（字体大小、透明度、颜色等）
-- **`drops.js`** - `DropsManager` 类，管理雨滴的创建、移动和重置
-- **`renderer.js`** - `Renderer` 类，负责画布绑定和字符绘制
-- **`main.js`** - 主入口，组装各模块并启动动画循环
+## How to Deploy to GitHub Pages
 
-使用了 ES6 模块化（`import/export`），代码更清晰、易于维护和扩展！
+1.  **Create a GitHub Repository:**
+    *   Go to GitHub and create a new repository (e.g., `isrg-website`).
+
+2.  **Push Code:**
+    *   Initialize git in this folder: `git init`
+    *   Add files: `git add .`
+    *   Commit: `git commit -m "Initial commit"`
+    *   Add remote: `git remote add origin https://github.com/YOUR_USERNAME/isrg-website.git`
+    *   Push: `git push -u origin main`
+
+3.  **Enable GitHub Pages:**
+    *   Go to your repository **Settings** > **Pages**.
+    *   Under "Build and deployment", select **Source** as "Deploy from a branch".
+    *   Select `main` (or `master`) branch and `/ (root)` folder.
+    *   Click **Save**.
+
+Your site will be live at `https://YOUR_USERNAME.github.io/isrg-website/`.
+
+## Customization
+
+*   **Content:** Edit the HTML files to update text, news, and publications.
+*   **Styling:** Modify `css/style.css` to change colors, fonts, or layout.
+*   **Images:** Place member photos and other images in `assets/images/` and update the `src` attributes in the HTML.
+

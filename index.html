@@ -1,17 +1,116 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>黑客帝国 Digit Rain</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Intelligent Systems Research Group | Home</title>
+    <meta name="description" content="Official website of the Intelligent Systems Research Group. Latest research, members, and publications.">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="input-container">
-        <input type="text" id="textInput" value="GZDLab love everyone" placeholder="输入你想显示的文字...">
-    </div>
-    <canvas id="matrix"></canvas>
-    
-    <script type="module" src="js/main.js"></script>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">ISRG Lab</a>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <div class="nav-links">
+                    <a href="index.html" class="active">Home</a>
+                    <a href="members.html">Members</a>
+                    <a href="research.html">Research</a>
+                    <a href="news.html">News</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>Intelligent Systems Research Group</h1>
+                <p>Advancing the frontiers of Artificial Intelligence and Machine Learning for a better future.</p>
+                <a href="research.html" class="btn">Explore Our Work</a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="container">
+            <h2>About Us</h2>
+            <p>Welcome to the Intelligent Systems Research Group (ISRG). We are a dedicated team of researchers focusing on the intersection of deep learning, computer vision, and robotics. Our mission is to develop robust AI systems that can perceive, reason, and act in complex real-world environments.</p>
+        </section>
+
+        <!-- Recent News Section -->
+        <section class="bg-light">
+            <div class="container">
+                <h2>Recent News</h2>
+                
+                <div class="news-list">
+                    <article class="news-item">
+                        <div class="news-date">Dec 20, 2025</div>
+                        <div class="news-content">
+                            <h3><a href="news.html#news1">Paper Accepted at CVPR 2026</a></h3>
+                            <p>Our latest work on "Self-supervised Learning for Robotic Manipulation" has been accepted for oral presentation at CVPR.</p>
+                        </div>
+                    </article>
+
+                    <article class="news-item">
+                        <div class="news-date">Nov 15, 2025</div>
+                        <div class="news-content">
+                            <h3><a href="news.html#news2">Dr. Zhang Receives Best Paper Award</a></h3>
+                            <p>Congratulations to our lab director for receiving the Best Paper Award at the International Conference on AI.</p>
+                        </div>
+                    </article>
+
+                    <article class="news-item">
+                        <div class="news-date">Oct 01, 2025</div>
+                        <div class="news-content">
+                            <h3><a href="news.html#news3">Welcome New PhD Students</a></h3>
+                            <p>We are excited to welcome three new PhD students to our research family this fall.</p>
+                        </div>
+                    </article>
+                </div>
+                
+                <div style="text-align: center; margin-top: 20px;">
+                    <a href="news.html" class="btn">View All News</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>ISRG Lab</h4>
+                    <p>Department of Computer Science<br>
+                    University of Science and Technology<br>
+                    123 Innovation Road, Tech City</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: contact@isrg-lab.edu<br>
+                    Phone: +1 (555) 123-4567</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html" style="color:white; opacity: 0.8;">Home</a></li>
+                        <li><a href="members.html" style="color:white; opacity: 0.8;">Members</a></li>
+                        <li><a href="research.html" style="color:white; opacity: 0.8;">Research</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2025 Intelligent Systems Research Group. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
+
