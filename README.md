@@ -1,21 +1,34 @@
-# Intelligent Systems Research Group (ISRG) Website
+# Research Group Website (Static + Bilingual)
 
-This is a static website template for a research group, designed to be hosted on GitHub Pages. It uses "Vanilla" web technologies (HTML, CSS, JavaScript) without any complex build tools or frameworks.
+This is a static website template for a research group. It uses "Vanilla" web technologies (HTML, CSS, JavaScript) without any build tools or frameworks.
+
+It supports **Chinese (default)** + **English** via an `/en/` mirror directory, with a language switch in the navigation bar.
 
 ## Project Structure
 
 ```
 .
-├── index.html      # Home page
-├── members.html    # Team members page
-├── research.html   # Research and publications page
-├── news.html       # Full news archive
+├── index.html             # 首页（中文）
+├── members.html           # 成员（中文）
+├── research.html          # 研究（中文）
+├── publications.html      # 论文（中文）
+├── news.html              # 新闻（中文）
+├── resources.html         # 资源（中文）
+├── teaching.html          # 教学（中文）
+├── join.html              # 招生（中文）
+├── contact.html           # 联系（中文）
+├── en/                    # English mirror (same file names)
+│   ├── index.html
+│   ├── members.html
+│   └── ...
 ├── css/
-│   └── style.css   # Main stylesheet
+│   └── style.css          # Main stylesheet
 ├── js/
-│   └── main.js     # Basic interactivity (mobile menu)
+│   └── site.js            # Shared header/footer + nav + language switch + mobile menu
 └── assets/
-    └── images/     # Place your images here
+    └── images/
+        ├── hero-bg.svg
+        └── placeholder.svg
 ```
 
 ## How to Deploy to GitHub Pages
@@ -40,7 +53,7 @@ Your site will be live at `https://YOUR_USERNAME.github.io/isrg-website/`.
 
 ## Customization
 
-*   **Content:** Edit the HTML files to update text, news, and publications.
+*   **Content:** Edit the HTML files to update text, news, and publications (both root and `/en/`).
 *   **Styling:** Modify `css/style.css` to change colors, fonts, or layout.
-*   **Images:** Place member photos and other images in `assets/images/` and update the `src` attributes in the HTML.
+*   **Images:** Place images in `assets/images/` and update the `src` attributes in the HTML (or keep the provided SVG placeholders).
 

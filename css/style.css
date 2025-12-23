@@ -71,7 +71,9 @@ nav {
 
 .nav-links {
     display: flex;
-    gap: 30px;
+    gap: 18px;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .nav-links a {
@@ -92,6 +94,26 @@ nav {
     width: 100%;
     height: 2px;
     background-color: var(--primary-color);
+}
+
+/* Language switch + separator */
+.nav-sep {
+    width: 1px;
+    height: 18px;
+    background: var(--border-color);
+    display: inline-block;
+    margin: 0 4px;
+}
+
+.lang-switch {
+    font-weight: 700;
+    border: 1px solid var(--border-color);
+    padding: 6px 10px;
+    border-radius: 999px;
+}
+
+.lang-switch:hover {
+    border-color: var(--secondary-color);
 }
 
 /* Hamburger Menu (Mobile) */
@@ -135,7 +157,7 @@ h3 { font-size: 1.5rem; }
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(0, 51, 102, 0.9), rgba(0, 51, 102, 0.7)), url('../assets/images/hero-bg.jpg');
+    background: linear-gradient(rgba(0, 51, 102, 0.92), rgba(0, 51, 102, 0.72)), url('../assets/images/hero-bg.svg');
     background-size: cover;
     background-position: center;
     background-color: var(--primary-color); /* Fallback */
@@ -160,6 +182,35 @@ h3 { font-size: 1.5rem; }
 .btn:hover {
     background-color: var(--accent-color);
     transform: translateY(-2px);
+}
+
+/* Page helpers */
+.page-lead {
+    color: var(--light-text);
+    max-width: 900px;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    background: white;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 18px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.card h3 {
+    margin-bottom: 8px;
+}
+
+.muted {
+    color: var(--light-text);
 }
 
 /* News List (Homepage & News Page) */
@@ -280,6 +331,15 @@ footer {
     opacity: 0.8;
 }
 
+.footer-link {
+    color: white;
+    opacity: 0.85;
+}
+
+.footer-link:hover {
+    opacity: 1;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .menu-toggle {
@@ -297,6 +357,10 @@ footer {
         box-shadow: 0 5px 10px rgba(0,0,0,0.1);
         padding: 20px 0;
         text-align: center;
+    }
+
+    .nav-sep {
+        display: none;
     }
 
     .nav-links.active {
